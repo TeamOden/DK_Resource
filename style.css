@@ -1,0 +1,459 @@
+body {
+    color: #333;
+}
+h1 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.desc {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 16px;
+}
+hr {
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+h5 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+h6 {
+    font-weight: 500;
+    font-size: 16;
+    margin-bottom: 8px;
+}
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+hr{
+    border-color: #DDDDDD;
+}
+.layout {
+    max-width: 616px;
+    width: fit-content;
+    margin: 56px auto;
+}
+/* modal */
+.modal-content,
+button {
+    border-radius: 8px !important;
+}
+.modal-header {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+}
+.modal-body{
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+}
+.modal-body p{
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+.modal-footer {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    border-top: none !important;
+}
+
+.modal-content .code {
+    text-align: center;
+    font-size: 48px;
+    color: #6758FF;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.modal-content .copy {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content .copy img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+.modal-content .copy span {
+    font-size: 14px;
+    color: #B6B6B6;
+}
+.teleport-frame {
+    margin: 0 auto;
+    max-width: 280px;
+    max-height: 240px;
+    background-color: #fff;
+}
+
+.teleport-frame h5{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.teleport button{
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-right: 2px;
+    padding: 0 16px;
+    color: #6758FF;
+    font-size: 14px;
+    font-weight: 500;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #6758FF;
+    background-color: #fff;
+    border-radius: 30px !important;
+}
+
+/* common component style */
+.w-100 {
+    width: 100%;
+}
+.tac {
+    text-align: center;
+    margin-top: 8px;
+}
+
+
+
+button,
+.button {
+    min-width: fit-content;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 8px;
+    border: 1px solid #6758FF;
+    background-color: #6758FF;
+    transition: all 0.2s;
+}
+
+button:hover,
+.button:hover{
+    opacity: 0.8;
+}
+button:active,
+.button:active{
+    transform: translate(1px, 1px);
+}
+
+.button.gray {
+    background-color: #999;
+    border-color: #999;
+}
+.button.line.gray {
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    color: #999;
+}
+
+.button.line {
+    background-color: #fff;
+    color: #6758FF;
+}
+
+.input-text{
+    margin-bottom: 16px;
+}
+.input-text.person-num {
+    margin-bottom: 32px;
+}
+.input-text label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="text"]{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 16px;
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    -webkit-appearance: none;
+}
+#personNum {
+    width: calc(50% - 8px);
+}
+input:focus{
+    outline: 4px solid #6658ff5b;
+}
+
+
+/* calendar */
+.calendar-frame {
+    max-width: 616px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+
+.flatpickr-calendar.inline {
+    width: 100%;
+    max-width: 560px;
+    box-shadow: none;
+    border: none;
+}
+.flatpickr-rContainer {
+    width: 100%;
+}
+.flatpickr-days {
+    width: 100%;
+}
+.dayContainer {
+    gap: 8px;
+    width:100%;
+    max-width: 100%;
+    min-width: none;
+}
+.flatpickr-weekdays {
+    height: unset;
+}
+.flatpickr-weekdaycontainer {
+    display: flex;
+    gap: 8px;
+    justify-content: space-around;
+    padding: 16px 0;
+    border-bottom: 1px solid #eee;
+}
+.flatpickr-weekday {
+    max-width: 12%;
+}
+
+.flatpickr-day {
+    position: relative;
+    max-width: calc(14.2857% - 8px);
+    height: 56px;
+    line-height: 56px;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+.flatpickr-day:not(.flatpickr-disabled) {
+    line-height: 48px;
+}
+.flatpickr-day:not(.flatpickr-disabled)::after {
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 4px);
+    width: 40px;
+    height: 40px;
+    content: '예약가능';
+    color: #ccc;
+}
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange,
+.flatpickr-day.selected.inRange,
+.flatpickr-day.startRange.inRange,
+.flatpickr-day.endRange.inRange,
+.flatpickr-day.selected:focus,
+.flatpickr-day.startRange:focus,
+.flatpickr-day.endRange:focus,
+.flatpickr-day.selected:hover,
+.flatpickr-day.startRange:hover,
+.flatpickr-day.endRange:hover,
+.flatpickr-day.selected.prevMonthDay,
+.flatpickr-day.startRange.prevMonthDay,
+.flatpickr-day.endRange.prevMonthDay,
+.flatpickr-day.selected.nextMonthDay,
+.flatpickr-day.startRange.nextMonthDay,
+.flatpickr-day.endRange.nextMonthDay,
+.flatpickr-day.selected {
+    background-color: #6758FF;
+    border: #6758FF;
+}
+
+.flatpickr-current-month {
+    font-size: 24px;
+}
+.flatpickr-current-month .flatpickr-monthDropdown-months{
+    font-weight: 500;
+}
+.flatpickr-current-month input.cur-year {
+    font-weight: 500;
+}
+
+.calendar-button {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.calendar-button input{
+    cursor: unset;
+    border: none;
+    font-weight: 400;
+    color: #6758FF;
+    display: block;
+    width: calc(50% - 8px);
+    height: 40px;
+    line-height: 40px;
+    padding: 0 16px;
+    font-size: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #6758FF;
+    border-radius: 0;
+}
+.calendar-button input::placeholder{
+    color: #ccc;
+    font-weight: 100;
+}
+.calendar-button input:focus{
+    outline: none;
+}
+
+.time-list-frame {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+.time-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+/* checkbox-full */
+.checkbox-full {
+    width: 100%;
+    user-select: none;
+}
+.checkbox-full label{
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 38px;
+    line-height: 38px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.checkbox-full label i{
+    opacity: 0.3;
+    margin-left: 16px;
+    font-size: 14px;
+}
+.checkbox-full input{
+    position: absolute;
+    left: -9999px;
+}
+.checkbox-full input:checked + label{
+    border-color: #6758FF;
+    background-color: #fff;
+    color: #6758FF;
+}
+.checkbox-full input:disabled + label{
+    border-color: #ccc;
+    background-color: #eee;
+    color: #999;
+}
+
+.reservation-list .content-frame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    margin-bottom: 16px;
+    padding: 16px 24px;
+    gap: 16px;
+    background-color: #F8F8F8;
+    border-radius: 8px;
+}
+.reservation-list .content-frame > div:first-child{
+    width: 67%;
+    display: flex;
+    gap: 8px;
+}
+.reservation-list .content-frame > div > div:last-child{
+    min-width: 80px;
+    max-width: 80px;
+}
+.reservation-list .content-frame .input-text{
+    width: 100%;
+    margin: 0;
+}
+.reservation-list .content-frame button:first-child {
+    margin-right: 8px;
+}
+.reservation-list input{
+    cursor: unset;
+}
+.reservation-list input:focus{
+    outline: none;
+}
+
+
+/* recommend */
+.recommand-layout {
+    width: 616px;
+}
+.recommand-layout > p{
+    margin-bottom: 16px;
+}
+
+.recommend a{
+    display: inline-block;
+    height: 32px;
+    padding: 0 16px;
+    margin-right: 4px;
+    margin-bottom: 24px;
+    line-height: 32px;
+    border-radius: 16px !important;
+}
+
+/* registration */
+.registration i{
+    color: #6758FF;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    margin-bottom: 8px;
+}
+.form-check label {
+    display: block;
+    margin-top: 4px;
+    margin-left: 8px;
+    word-break: keep-all;
+}
+.form-check-input:checked {
+    background-color: #6758FF;
+    border-color: #6758FF;
+}
+.check-frame:last-child {
+    margin-bottom: 80px !important;
+    border: 1px solid red;
+}
+
+.check-frame .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.registration-layout {
+    max-width: 460px;
+}
+
+.form-check.agreement a{
+    color: #6758FF;
+    border-bottom: 1px solid #6758FF;
+}
