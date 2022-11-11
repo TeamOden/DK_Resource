@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recommend-site</title>
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TeamOden/DK_Resource@main/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TeamOden/DK_Resource@main/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        i {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="background-color: #fff;">
+    <section class="layout recommand-layout">
+
+        <button onclick="closeWidget()" class="button_close" style="float: right;">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h1>특허 관련 사이트</h1>
+        <p class="desc">버튼을 클릭하시면 해당 특허와 관련된 사이트 링크로 연결됩니다.</p>
+        <hr />
+        <div class="recommend">
+            <a target="_blank" href="http://www.kipris.or.kr" class="button line">특허정보검색(키프리스)</a>
+            <a target="_blank" href="http://www.kipi.or.kr/cmm/main/mainPage.do" class="button line">한국특허정보원(KIPI)</a>
+            <a target="_blank" href="https://www.patent.go.kr/smart/portal/Main.do" class="button line">전자출원(특허로)</a>
+            <br />
+            <a target="_blank" href="http://www.kaips.or.kr/com.do?method=c06" class="button line">KAIPS 뉴스레터</a>
+            <a target="_blank" href="http://www.kaips.or.kr/com.do?method=c05" class="button line">IP 서비스뉴스</a>
+            <a target="_blank" href="http://www.kaips.or.kr/info.do?method=i02" class="button line">IP 교육정보</a>
+            <a target="_blank" href="http://www.kaips.or.kr/info.do?method=i01" class="button line">IP 서비스 기업정보</a>
+            <a target="_blank" href="http://www.kaips.or.kr/com.do?method=c04" class="button line">IP 사업정보</a>
+            <br />
+            <a target="_blank" href="https://www.pcc.or.kr/pcc/" class="button line">공익 변리사 특허 상담센터</a>
+            <a target="_blank" href="https://www.kipo.go.kr/kcall/" class="button line">특허 고객상담센터</a>
+            <a target="_blank" href="https://www.kipo.go.kr/ipt/" class="button line">특허 심판원</a>
+            <br />
+            <a target="_blank"
+                href="https://www.kipo.go.kr/ipt/iptBultnMgmt.do?menuCd=SCD0400496&parntMenuCd2=SCD0400059"
+                class="button line">특허 심판원 교육자료</a>
+            <a target="_blank" href="https://patent.scourt.go.kr/main/new/Main.work" class="button line">특허 법원</a>
+            <a target="_blank" href="https://scienceon.kisti.re.kr/main/mainForm.do" class="button line">과학기술정보
+                통합사이트</a>
+            <br />
+            <a target="_blank" href="https://www2.ripc.org/portal/main.do;jsessionid=1E50E112272AC8D30B4822C24791F2E5"
+                class="button line">지역 지식 재산센터</a>
+            <a target="_blank" href="https://www.e-patentnews.com/" class="button line">특허 뉴스</a>
+            <a target="_blank"
+                href="https://www.e-patentnews.com/sub.html?section=sc1&section2=%ED%8A%B9%ED%97%88%EB%8F%99%ED%96%A5"
+                class="button line">특허 동향</a>
+            <a target="_blank"
+                href="https://www.e-patentnews.com/sub.html?section=sc1&section2=%ED%8A%B9%ED%97%88%EC%B9%BC%EB%9F%BC"
+                class="button line">특허 칼럼</a>
+            <a target="_blank" href="https://www.e-patentnews.com/sub.html?section=sc35" class="button line">스페셜기획</a>
+        </div>
+    </section>
+    <section class="layout recommand-layout">
+        <h1>초보자 추천 자료</h1>
+        <p class="desc">특허에 대해 잘 모르거나 처음 시작하시는 초보자에게 추천드립니다.</p>
+        <hr />
+        <div class="recommend">
+            <a href="https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=724&ccfNo=2&cciNo=1&cnpClsNo=1&search_put="
+                class="button line">특허 출원에서 등록까지</a>
+        </div>
+    </section>
+    <script>
+
+        // 버튼을 누르면 호출되는 함수
+        function closeWidget() {
+            // App으로 메시지를 보냄.
+            window.parent.postMessage(
+                {
+                    type: "close",
+                },
+                "*"
+            );
+        }
+        function openWeb(url) {
+            // App으로 메시지를 보냄.
+            window.parent.postMessage(
+                {
+                    type: "open",
+                    url,
+                },
+                "*"
+            );
+        }
+    </script>
+</body>
+
+</html>
