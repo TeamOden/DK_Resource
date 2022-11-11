@@ -24,10 +24,6 @@
 
 <body style="background-color: #fff;">
     <section class="layout recommand-layout">
-
-        <button onclick="closeWidget()" class="button_close" style="float: right;">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
         <h1>특허 관련 사이트</h1>
         <p class="desc">버튼을 클릭하시면 해당 특허와 관련된 사이트 링크로 연결됩니다.</p>
         <hr />
@@ -74,29 +70,6 @@
                 class="button line">특허 출원에서 등록까지</a>
         </div>
     </section>
-    <script>
-
-        // 버튼을 누르면 호출되는 함수
-        function closeWidget() {
-            // App으로 메시지를 보냄.
-            window.parent.postMessage(
-                {
-                    type: "close",
-                },
-                "*"
-            );
-        }
-        function openWeb(url) {
-            // App으로 메시지를 보냄.
-            window.parent.postMessage(
-                {
-                    type: "open",
-                    url,
-                },
-                "*"
-            );
-        }
-    </script>
 </body>
 
 </html>
