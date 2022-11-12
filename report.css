@@ -1,0 +1,219 @@
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  color: #333;
+}
+
+.btn-primary.line {
+  background-color: #fff !important;
+  border-color: #6758FF !important;
+  color: #6758FF !important;
+}
+
+button,
+.button {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #fff;
+  padding: 0 20px;
+  border-radius: 8px;
+  border: 1px solid #6758FF;
+  background-color: #6758FF;
+  transition: all 0.2s;
+}
+
+button:hover,
+.button:hover {
+  opacity: 0.8;
+}
+
+button:active,
+.button:active {
+  transform: translate(1px, 1px);
+}
+
+.button.gray {
+  background-color: #999;
+  border-color: #999;
+}
+
+.button.line.gray {
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  color: #999;
+}
+
+.button.line {
+  background-color: #fff;
+  color: #6758FF;
+}
+
+.btn-primary {
+  background-color: #6758FF !important;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 200px;
+  height: 60px;
+  width: calc(100% - 200px);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+header .header {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 670px;
+  max-width: 1248px;
+  padding: 0 16px;
+  justify-content: space-between;
+}
+header .header .make-report {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header .header .make-report > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header .header .make-report > div * {
+  margin: 0;
+  word-break: keep-all;
+}
+header .header .make-report > div label {
+  font-size: 18px;
+  font-weight: 500;
+}
+header .header .make-report > div input {
+  min-width: 320px;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  background-color: #6758FF;
+  height: 100vh;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+aside ul {
+  margin-top: 96px;
+  padding: 16px;
+}
+aside ul li {
+  margin-bottom: 8px;
+}
+aside ul li:hover a {
+  color: #fff;
+  background-color: #766BFE;
+}
+aside ul li.active a {
+  background-color: #766BFE;
+}
+aside ul li a {
+  transition: all 0.2s;
+  display: block;
+  width: 100%;
+  padding: 16px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+section {
+  margin-top: 60px;
+  margin-left: 200px;
+  padding-top: 32px;
+}
+section .content {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 670px;
+  max-width: 1248px;
+  padding: 16px;
+}
+section table {
+  margin-bottom: 0 !important;
+}
+section h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+section th {
+  word-break: keep-all;
+  background-color: #F5F4FF !important;
+}
+section .box-container {
+  display: flex;
+  gap: 32px;
+  align-items: stretch;
+  margin-bottom: 16px;
+}
+section .box-container:first-child {
+  flex-flow: row wrap;
+  align-items: stretch;
+}
+section .box-container:first-child > div:first-child {
+  flex: 1;
+  flex-grow: 3.25;
+}
+section .box-container:first-child > div:last-child {
+  flex: 1;
+  flex-grow: 1;
+}
+section .box-container > .box-wrap,
+section .box-container > .box {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+section .box-container > .box-wrap > table,
+section .box-container > .box-wrap > div,
+section .box-container > .box > table,
+section .box-container > .box > div {
+  flex-grow: 1;
+  font-size: 14px;
+}
+section .box-container .box {
+  margin-bottom: 24px;
+}
+section .box-container .box .border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+section .box-container .box .border > img {
+  display: block;
+  width: 100%;
+}
+
+.none-data {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 142px);
+}
+.none-data span {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #B4B4B4;
+  font-size: 18px;
+}/*# sourceMappingURL=report.css.map */
